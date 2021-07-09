@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/Blue">
+
+    <EditText
+        android:id="@+id/editnota1"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:inputType="number"
+        android:maxLength="3"
+        android:textColor="@color/black"
+        android:layout_marginTop="50dp"
+        android:layout_centerHorizontal="true"
+        android:background="@color/white"
+        android:hint="@string/nota_01"
+        android:textColorHint="@color/Gray" />
+
+    <EditText
+        android:id="@+id/editnota2"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:inputType="number"
+        android:maxLength="3"
+        android:textColor="@color/black"
+        android:layout_below="@id/editnota1"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_margin="30dp"
+        android:background="@color/white"
+        android:hint="@string/nota_02"
+        android:textColorHint="@color/Gray" />
+
+    <EditText
+        android:id="@+id/editfaltas"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:inputType="number"
+        android:maxLength="3"
+        android:textColor="@color/black"
+        android:layout_below="@id/editnota2"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:background="@color/white"
+        android:hint="@string/faltas"
+        android:textColorHint="@color/Gray" />
+
+    <Button
+        android:id="@+id/botao"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editfaltas"
+        android:layout_marginTop="20dp"
+        android:background="@color/white"
+        android:hint="@string/calcular" />
+
+    <LinearLayout
+        android:id="@+id/lin1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/botao">
+
+        <TextView
+            android:id="@+id/textResposta"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/botao"
+            android:textSize="20sp"
+            android:layout_marginTop="20dp" />
+
+    </LinearLayout>
+
+</RelativeLayout>
